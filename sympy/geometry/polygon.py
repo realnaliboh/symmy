@@ -141,7 +141,7 @@ class Polygon(GeometrySet):
             nodup.pop()  # last point was same as first
 
         # remove collinear points
-        i = -3
+        """i = -3
         while i < len(nodup) - 3 and len(nodup) > 2:
             a, b, c = nodup[i], nodup[i + 1], nodup[i + 2]
             if Point.is_collinear(a, b, c):
@@ -149,7 +149,7 @@ class Polygon(GeometrySet):
                 if a == c:
                     nodup.pop(i)
             else:
-                i += 1
+                i += 1"""
 
         vertices = list(nodup)
 
